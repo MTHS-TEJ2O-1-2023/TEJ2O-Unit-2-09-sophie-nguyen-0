@@ -26,7 +26,7 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
     `)
   }
-    // randomNumber is 2
+  // randomNumber is 2
   if (randomNumber === 2) {
     basic.showLeds(`
         # # # # #
@@ -36,7 +36,7 @@ input.onGesture(Gesture.Shake, function () {
         # # # # #
     `)
   }
-    // randomNumber is 3
+  // randomNumber is 3
   if (randomNumber === 3) {
     basic.showIcon(IconNames.Scissors)
   }
