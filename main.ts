@@ -38,8 +38,17 @@ input.onGesture(Gesture.Shake, function () {
         # # # # #
      `)
   }
-    // randomNumber is 2
-  if (randomNumber === 2) {
+    // randomNumber is 3
+  if (randomNumber === 3) {
       basic.showIcon(IconNames.Scissors)
   }
+})
+
+input.onButtonPressed(Button.A, function() {
+  score = score + 1
+})
+
+input.onButtonPressed(Button.B, function () {
+  basic.clearScreen()
+  basic.showString('Score: ' + score.toString())
 })
