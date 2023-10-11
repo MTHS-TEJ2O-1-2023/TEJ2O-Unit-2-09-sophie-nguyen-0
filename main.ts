@@ -19,28 +19,28 @@ input.onGesture(Gesture.Shake, function () {
   // randomNumber is 1
   if (randomNumber === 1) {
         
-      basic.showLeds(`
-        . . . . .
-        . # # # .
-        . # # # .
-        . # # # .
-        . . . . .
-     `)
+    basic.showLeds(`
+      . . . . .
+      . # # # .
+      . # # # .
+      . # # # .
+      . . . . .
+    `)
   }
     // randomNumber is 2
   if (randomNumber === 2) {
 
-      basic.showLeds(`
-        # # # # #
-        # . . . #
-        # . . . #
-        # . . . #
-        # # # # #
-     `)
+    basic.showLeds(`
+      # # # # #
+      # . . . #
+      # . . . #
+      # . . . #
+      # # # # #
+    `)
   }
     // randomNumber is 3
   if (randomNumber === 3) {
-      basic.showIcon(IconNames.Scissors)
+    basic.showIcon(IconNames.Scissors)
   }
 })
 
