@@ -5,4 +5,41 @@
  * This program does rock paper scissors
 */
 
-basic.showString('Hello, World!')
+// variables
+let randomNumber: number = 0
+let score: number = 0
+
+basic.clearScreen()
+basic.showIcon(IconNames.Heart)
+
+input.onGesture(Gesture.Shake, function () {
+  randomNumber = randint(1, 3)
+  basic.clearScreen()
+
+  // randomNumber is 1
+  if (randomNumber === 1) {
+        
+      basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+     `)
+  }
+    // randomNumber is 2
+  if (randomNumber === 2) {
+
+      basic.showLeds(`
+        # # # # #
+        # . . . #
+        # . . . #
+        # . . . #
+        # # # # #
+     `)
+  }
+    // randomNumber is 2
+  if (randomNumber === 2) {
+      basic.showIcon(IconNames.Scissors)
+  }
+})
