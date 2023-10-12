@@ -40,12 +40,15 @@ input.onGesture(Gesture.Shake, function () {
   if (randomNumber === 3) {
     basic.showIcon(IconNames.Scissors)
   }
-  basic.pause(1000)
+  basic.pause(3000)
   basic.showIcon(IconNames.Heart)
 })
 
 input.onButtonPressed(Button.A, function() {
   score = score + 1
+  basic.showIcon(IconNames.Yes)
+  basic.pause(3000)
+  basic.showIcon(IconNames.Heart)
 })
 
 input.onButtonPressed(Button.B, function () {
