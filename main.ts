@@ -44,7 +44,7 @@ input.onGesture(Gesture.Shake, function () {
   basic.showIcon(IconNames.Heart)
 })
 
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A, function () {
   score = score + 1
   basic.showIcon(IconNames.Yes)
   basic.pause(3000)
