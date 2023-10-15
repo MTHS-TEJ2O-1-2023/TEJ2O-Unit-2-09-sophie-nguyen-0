@@ -23,7 +23,6 @@ while True:
         sleep(2000)
         display.show(Image.HEART)
 
-
     if button_b.is_pressed():
         display.scroll(str(score))
 
@@ -36,15 +35,16 @@ while True:
         if random_number == 1:
             display.show(scissor)
             sleep(5000)
+            display.show(Image.HEART)
 
             # random_number == 2
         if random_number == 2:
             display.show(rock)
             sleep(5000)
+            display.show(Image.HEART)
 
             # random_number == 3
         if random_number == 3:
             display.show(paper)
             sleep(5000)
-
             display.show(Image.HEART)
